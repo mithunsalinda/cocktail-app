@@ -15,7 +15,7 @@ interface DrinkProduct {
 const Drink: React.FC<{ product: DrinkProduct }> = ({ product }) => (
   <div key={product.id} className="p-4">
     <div>
-      <Image
+      <img
         src={product.strDrinkThumb}
         alt={product.strCategory}
         className="h-full w-full object-cover object-center lg:h-full lg:w-full"
