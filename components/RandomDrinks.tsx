@@ -79,6 +79,7 @@ const RandomDrinks: React.FC = () => {
           ))}
           <Card>
             <Button
+            size="md"
               variant="gradient"
               gradient={{ from: 'red', to: 'orange', deg: 90 }}
               onClick={fetchData}
