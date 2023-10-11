@@ -82,7 +82,7 @@ const RandomDrinks: React.FC = () => {
             size="md"
               variant="gradient"
               gradient={{ from: 'red', to: 'orange', deg: 90 }}
-              onClick={fetchData}
+              onClick={() =>fetchData()}
             >
               Refresh
             </Button>
