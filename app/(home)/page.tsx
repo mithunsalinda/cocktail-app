@@ -1,8 +1,7 @@
-import { getRandomDrinks } from "@/actions/serverAction";
-import AddButton from "@/components/AddButton";
+
 import RandomDrinks from "@/components/RandomDrinks";
 import Search from "@/components/Search";
-import { revalidateTag } from "next/cache";
+
 
 export default function Home() {
   /**

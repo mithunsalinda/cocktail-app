@@ -1,12 +1,15 @@
 import '../globals.css'
 import '@mantine/core/styles.css';
 import type { Metadata } from 'next'
-import { MantineProvider } from '@mantine/core'
+import { MantineProvider, createTheme,ColorSchemeScript } from '@mantine/core';
 
 export const metadata: Metadata = {
   title: 'Next JS : TEST',
   description: 'Sample cocktail web ap',
 }
+const theme = createTheme({
+  /** Put your mantine theme override here */
+});
 
 export default function RootLayout({
   children,
@@ -15,7 +18,12 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body><MantineProvider>{children}</MantineProvider></body>
+      <head>
+        <ColorSchemeScript />
+      </head>
+      <body>
+        <MantineProvider>{children}</MantineProvider>
+      </body>
     </html>
   )
 }
