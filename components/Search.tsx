@@ -72,7 +72,7 @@ const Search: React.FC = () => {
           <TextInput
             radius="xl"
             size="md"
-            placeholder="Search questions"
+            placeholder="Search Drinks"
             rightSectionWidth={42}
             leftSection={
               <IconSearch

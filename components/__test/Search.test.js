@@ -7,10 +7,10 @@ test("form onSubmit function is called when the form is submitted", () => {
     <Search formOnSubmit={formOnSubmit} />
   );
 
-  const searchInput = getByPlaceholderText("Search questions");
+  const searchInput = getByPlaceholderText("Search Drinks");
   const submitButton = getByTestId("submit-button");
 
-  fireEvent.change(searchInput, { target: { value: "test" } });
+  fireEvent.change(searchInput, { target: { value: "mar" } });
   fireEvent.click(submitButton);
 
   expect(formOnSubmit).toHaveBeenCalled();
